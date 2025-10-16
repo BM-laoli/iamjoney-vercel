@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import ArticlesClient, { Category, Post } from './ArticlesClient';
+import ArticlesClient from './ArticlesClient';
 import Footer from '@/components/Footer';
 import { request } from '@/utils/request';
 
@@ -116,6 +116,7 @@ export async function generateMetadata({
         const postResponse = await request.GET_Posts({ id: String(postId) });
         
         if (postResponse.success && postResponse.data) {
+          /* @typescript-eslint/no-explicit-any */
           const post = postResponse.data as any;
           
           return {

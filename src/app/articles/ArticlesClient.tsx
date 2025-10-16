@@ -153,7 +153,7 @@ export default function ArticlesClient({
   // 初始化文章组织
   useEffect(() => {
     organizePostsByCategory();
-  }, []);
+  }, [organizePostsByCategory]);
 
   // 初始化逻辑
   useDeepCompareEffect(() => {
@@ -231,7 +231,7 @@ export default function ArticlesClient({
         </Card>
         <Card className='ml-20' noStyle>
           <p>
-            Currently Joney's articles are created on Feishu platform, this
+            Currently Joney&apos;s articles are created on Feishu platform, this
             personal site is used to systematically share with everyone
           </p>
         </Card>

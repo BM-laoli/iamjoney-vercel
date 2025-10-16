@@ -1,7 +1,5 @@
 "use client";
-import Link from "next/link";
 import Card from "@/components/Card";
-import Footer from "@/components/Footer";
 
 export default function ResumePage() {
   return (
@@ -30,7 +28,7 @@ export default function ResumePage() {
             React · Node.js · TypeScript · React Native · .NET Core (C#) · iOS (Native) · Full Stack (React + Node.js + .NET Core)
           </p>
           <p className="pixel-text text-sm md:text-base mt-3">
-            Invited guest speaker at 2022 Chongqing Frontend Exchange Conference "Tongzhou"; continuously expanding boundaries from frontend development. Former senior engineer at Newegg, one of North America's top four e-commerce companies.
+            Invited guest speaker at 2022 Chongqing Frontend Exchange Conference &ldquo;Tongzhou&rdquo;; continuously expanding boundaries from frontend development. Former senior engineer at Newegg, one of North America&apos;s top four e-commerce companies.
           </p>
           <p className="pixel-text text-sm md:text-base mt-2">Desired position: Game Client/Frontend React · Industry flexible · Salary: Negotiable</p>
         </Card>

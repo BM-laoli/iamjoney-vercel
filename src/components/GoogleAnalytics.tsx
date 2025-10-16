@@ -1,12 +1,12 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, Suspense } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
 
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void
-    dataLayer: any[]
+    gtag: (...args: unknown[]) => void
+    dataLayer: unknown[]
   }
 }
 
@@ -14,7 +14,7 @@ interface GoogleAnalyticsProps {
   GA_MEASUREMENT_ID: string
 }
 
-export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: GoogleAnalyticsProps) {
+function GoogleAnalyticsInner({ GA_MEASUREMENT_ID }: GoogleAnalyticsProps) {
   const pathname = usePathname()
   const searchParams = useSearchParams()
 
@@ -25,7 +25,7 @@ export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: GoogleAnalyticsPr
 
     // 初始化 gtag
     window.dataLayer = window.dataLayer || []
-    function gtag(...args: any[]) {
+    function gtag(...args: unknown[]) {
       window.dataLayer.push(args)
     }
     window.gtag = gtag
@@ -75,6 +75,14 @@ export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: GoogleAnalyticsPr
         }}
       />
     </>
+  )
+}
+
+export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: GoogleAnalyticsProps) {
+  return (
+    <Suspense fallback={null}>
+      <GoogleAnalyticsInner GA_MEASUREMENT_ID={GA_MEASUREMENT_ID} />
+    </Suspense>
   )
 }
 

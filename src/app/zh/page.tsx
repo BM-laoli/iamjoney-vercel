@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import SkillBar from "@/components/SkillBar";
 import ProjectCard from "@/components/ProjectCard";
 import Card from "@/components/Card";
 import SkillPane from "@/components/SkillPane";
@@ -83,7 +81,7 @@ export default function Home() {
                   <Card noStyle>
                     <h4 className="pixel-text text-sm font-bold mb-2">💡 程序员名言:</h4>
                     <p className="pixel-text text-xs text-gray-700">
-                      "Stay hungry, stay foolish." - Steve Jobs
+                      &ldquo;Stay hungry, stay foolish.&rdquo; - Steve Jobs
                     </p>
                   </Card>
                 </div>

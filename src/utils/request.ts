@@ -31,14 +31,18 @@ interface QueryPostsOptions {
   id?:string
 }
 
-class Request {
-  private HOST:String = '';
-  private APIS:any = {};
+interface RequestConfig {
+  HOST: string;
+  APIS: Record<string, string>;
+}
 
-  constructor(props:any){
-    const { HOST, APIS } = props
-    this.HOST = HOST
-    this.APIS = APIS
+class Request {
+  private HOST: string = '';
+  private APIS: Record<string, string> = {};
+
+  constructor(config: RequestConfig) {
+    this.HOST = config.HOST;
+    this.APIS = config.APIS;
   } 
 
 // 获取分类
