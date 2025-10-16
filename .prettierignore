@@ -1,0 +1,15 @@
+# 忽略格式化的文件和目录
+node_modules/
+.next/
+.git/
+dist/
+build/
+coverage/
+*.log
+.env*
+public/
+*.md
+*.mdx
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

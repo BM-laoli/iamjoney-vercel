@@ -1,0 +1,32 @@
+.ml-20 {
+  margin-left: 20px;
+}
+
+.category-list-scroll {
+  max-height: 300px;
+  min-height: 300px;
+  overflow-y: auto;
+}
+.category-list-scroll-350 {
+  max-height: 350px;
+  min-height: 350px;
+  overflow-y: auto;
+}
+.category-item-item {
+  justify-content: space-between;
+  align-items: end;
+}
+
+.articles-iframe-wrap {
+    max-height: 550px;
+    min-height: 600px;
+    overflow-y: hidden;
+}
+
+.mt-not {
+  /* margin-top: -65px; */
+}
+
+.mt-not-65 {
+  /* margin-top: -65px; */
+}

@@ -124,6 +124,7 @@ npm run lint
 2. 在 [Vercel](https://vercel.com) 中导入项目
 3. 配置环境变量 `NEXT_PUBLIC_GA_MEASUREMENT_ID`
 4. 部署完成
+5. 配置 HOST API 在 ./src/utils/request.ts
 
 ### 其他平台
 
@@ -148,6 +149,9 @@ npm run start
 欢迎提交 Issue 和 Pull Request！
 
 ## 📄 许可证
+
+## Use
+1. 一定要修改 /src/utils/request.ts 文件中的 HOST API
 
 MIT License
 

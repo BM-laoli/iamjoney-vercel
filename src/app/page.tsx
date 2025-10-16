@@ -9,12 +9,25 @@ import Footer from "@/components/Footer";
 
 const ProjectCardData = [
   {
+    
+    title: '✨Articles✨',
+    description: `Joney's All new Articles , exp: Python/Cpp/Unreal/Godot/Unitry...`,
+    linkUrl: '/articles',
+    icon: '/window.svg'
+  },
+  {
     title: 'NestJS/Node.js Column',
     // subtitle: 'Nest指南全网免费的最全面Nest指南',
     description: 'Comprehensive guide, in-depth yet accessible, well-structured, synchronized with Nest updates',
     // linkType: 'external' as const,
     linkUrl: '/nestjs-tutorial',
     icon: '/window.svg'
+  },
+  {
+    title: 'Blog & Web Journal',
+    description: 'Broadcasting thoughts, sharing technology, life, and reflections. One person can excel, but a team can go further',
+    linkUrl: '/blog',
+    icon: '/window.svg',
   },
    {
     title: 'Cross-Platform Development Column',
@@ -23,18 +36,100 @@ const ProjectCardData = [
     icon: '/window.svg'
   },
    {
-    title: 'Blog & Web Journal',
-    description: 'Broadcasting thoughts, sharing technology, life, and reflections. One person can excel, but a team can go further',
-    linkUrl: '/blog',
-    icon: '/window.svg'
-  },
-   {
     title: 'Resume',
     description: 'JoneySli\'s personal resume, 5 years of development experience, technical journey from mobile to game development',
     linkUrl: '/resume',
     icon: '/window.svg'
   },
+  
 ]
+
+const SkillData = {
+  'Languages': [
+    // "C++", "C#", "Python", "JavaScript", "Java", "Swift", "OC"
+    {
+      name: 'JavaScript',
+      rating: 5,
+    },
+    {
+      name: 'C++',
+      rating: 3,
+    },
+    {
+      name: 'C#',
+      rating: 4,
+    },
+    {
+      name: 'Python',
+      rating: 4,
+    },
+    {
+      name: 'Java',
+      rating: 4,
+    },
+    {
+      name: 'OC',
+      rating: 3,
+    },
+    {
+      name: 'Golang',
+      rating: 3,
+    },
+    {
+      name: 'Swift',
+      rating: 3,
+    },
+  ],
+  'Frameworks': [
+    // "React", "Vue", "Angular", "Flutter", "Electron"
+    {
+      name: 'React',
+      rating: 5,
+    },
+    {
+      name: 'React-Native',
+      rating: 5,
+    },
+    {
+      name: 'Nodejs',
+      rating: 5,
+    },
+    {
+      name: 'Nestjs',
+      rating: 5,
+    },
+    {
+      name: '.NetCore',
+      rating: 3,
+    },
+    {
+      name: 'Nextjs',
+      rating: 4,
+    },
+    {
+      name: 'WeChat Mini Program',
+      rating: 3,
+    },
+    {
+      name: 'DApp',
+      rating: 3,
+    },
+  ],
+  'GameDevelopment': [
+    {
+      name: 'Unreal Engine (UE)',
+      rating: 3,
+    },
+    {
+      name: 'GoDot',
+      rating: 3,
+    },
+    {
+      name: 'Unity',
+      rating: 2,
+    }
+  ],
+}
 
 export default function Home() {
   return (
@@ -108,23 +203,19 @@ export default function Home() {
             <div className="home-skill-pane1">
               <SkillPane
                 title="Programming Languages"
-                skills={["C++", "C#", "Python", "JavaScript", "Java", "Swift", "OC"]}
-                rating={4}
+                skills={ SkillData.Languages}
               />
             </div>
 
             <div className="home-skill-pane2">
               <SkillPane
                 title="Frameworks & Technologies"
-                skills={["React", ".NET Core", "Node.js", "NestJS", "Next.js", "React Native", "Uniapp", "WeChat Mini Program"]}
-                rating={5}
-              />
+                skills={SkillData.Frameworks}/>
             </div>
             <div className="home-skill-pane3">
               <SkillPane
                 title="Game Development"
-                skills={["UE4", "UE5", "Godot"]}
-                rating={4}
+                skills={SkillData.GameDevelopment}
                 className="mb-0"
               />
             </div>
