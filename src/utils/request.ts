@@ -1,6 +1,6 @@
 import { Category, Post } from "@/app/articles/ArticlesClient"
 
-const HOST = 'http://localhost:3003/api/v1'
+const HOST = 'https://product.iamjoney.com/api/v1'
 const APIS = {
   GET_Categories: `${HOST}/categories`,
   GET_Posts: `${HOST}/posts`,
