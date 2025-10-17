@@ -25,6 +25,8 @@ const eslintConfig = [
       "@typescript-eslint/no-explicit-any": "off",
       "react/no-unescaped-entities": "off",
       "prefer-const": "off",
+      "@next/next/no-sync-scripts": "warn" ,
+      "@typescript-eslint/ban-ts-comment": "off"
     },
   },
 ];

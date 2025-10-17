@@ -3,6 +3,7 @@
 
 import React, { useState } from 'react';
 import './style.css';
+import Image from "next/image";
 
 const ImageFanCard = ({ cards = [], onCardClick = () => {} }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -29,7 +30,7 @@ const ImageFanCard = ({ cards = [], onCardClick = () => {} }) => {
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            <img src={card.img} alt={`Card ${index}`} />
+            <Image width={186} height={360} src={card.img} alt={`Card ${index}`} />
           </div>
         ))}
       </div>
