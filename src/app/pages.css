@@ -1,12 +1,12 @@
 .home-top {
     width: 520px;
-    height: 20px;
+    /* height: 20px; */
     padding: 10px;
     margin-bottom: 20px;
 }
 
 .home-info {
-    width: 60%;
+    width: 97%;
     min-height: 120px;
     margin-bottom: 40px;
 }
@@ -34,4 +34,8 @@
 .home-skill-pane3 {
     width:80%;
 
+}
+
+.ml-20 {
+  margin-left: 25px;
 }

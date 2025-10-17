@@ -4,6 +4,8 @@ import Card from "@/components/Card";
 import SkillPane from "@/components/SkillPane";
 import './pages.css'
 import Footer from "@/components/Footer";
+import D3Skill from "@/components/D3_Skill/D3_Skill";
+import { PhoneFanCardClient } from "@/components/PhoneFanCard/PhoneFanCard";
 
 const ProjectCardData = [
   {
@@ -42,103 +44,110 @@ const ProjectCardData = [
   
 ]
 
-const SkillData = {
-  'Languages': [
-    // "C++", "C#", "Python", "JavaScript", "Java", "Swift", "OC"
-    {
-      name: 'JavaScript',
-      rating: 5,
-    },
-    {
-      name: 'C++',
-      rating: 3,
-    },
-    {
-      name: 'C#',
-      rating: 4,
-    },
-    {
-      name: 'Python',
-      rating: 4,
-    },
-    {
-      name: 'Java',
-      rating: 4,
-    },
-    {
-      name: 'OC',
-      rating: 3,
-    },
-    {
-      name: 'Golang',
-      rating: 3,
-    },
-    {
-      name: 'Swift',
-      rating: 3,
-    },
-  ],
-  'Frameworks': [
-    // "React", "Vue", "Angular", "Flutter", "Electron"
-    {
-      name: 'React',
-      rating: 5,
-    },
-    {
-      name: 'React-Native',
-      rating: 5,
-    },
-    {
-      name: 'Nodejs',
-      rating: 5,
-    },
-    {
-      name: 'Nestjs',
-      rating: 5,
-    },
-    {
-      name: '.NetCore',
-      rating: 3,
-    },
-    {
-      name: 'Nextjs',
-      rating: 4,
-    },
-    {
-      name: 'WeChat Mini Program',
-      rating: 3,
-    },
-    {
-      name: 'DApp',
-      rating: 3,
-    },
-  ],
-  'GameDevelopment': [
-    {
-      name: 'Unreal Engine (UE)',
-      rating: 3,
-    },
-    {
-      name: 'GoDot',
-      rating: 3,
-    },
-    {
-      name: 'Unity',
-      rating: 2,
-    }
-  ],
-}
+// const SkillData = {
+//   'Languages': [
+//     // "C++", "C#", "Python", "JavaScript", "Java", "Swift", "OC"
+//     {
+//       name: 'JavaScript',
+//       rating: 5,
+//     },
+//     {
+//       name: 'C++',
+//       rating: 3,
+//     },
+//     {
+//       name: 'C#',
+//       rating: 4,
+//     },
+//     {
+//       name: 'Python',
+//       rating: 4,
+//     },
+//     {
+//       name: 'Java',
+//       rating: 4,
+//     },
+//     {
+//       name: 'OC',
+//       rating: 3,
+//     },
+//     {
+//       name: 'Golang',
+//       rating: 3,
+//     },
+//     {
+//       name: 'Swift',
+//       rating: 3,
+//     },
+//   ],
+//   'Frameworks': [
+//     // "React", "Vue", "Angular", "Flutter", "Electron"
+//     {
+//       name: 'React',
+//       rating: 5,
+//     },
+//     {
+//       name: 'React-Native',
+//       rating: 5,
+//     },
+//     {
+//       name: 'Nodejs',
+//       rating: 5,
+//     },
+//     {
+//       name: 'Nestjs',
+//       rating: 5,
+//     },
+//     {
+//       name: '.NetCore',
+//       rating: 3,
+//     },
+//     {
+//       name: 'Nextjs',
+//       rating: 4,
+//     },
+//     {
+//       name: 'WeChat Mini Program',
+//       rating: 3,
+//     },
+//     {
+//       name: 'DApp',
+//       rating: 3,
+//     },
+//   ],
+//   'GameDevelopment': [
+//     {
+//       name: 'Unreal Engine (UE)',
+//       rating: 3,
+//     },
+//     {
+//       name: 'GoDot',
+//       rating: 3,
+//     },
+//     {
+//       name: 'Unity',
+//       rating: 2,
+//     }
+//   ],
+// }
 
 export default function Home() {
+ 
+
+
+
   return (
     <div className="pixel-grid min-h-screen">
       <div className="pixel-container">
         {/* 顶部像素风格盒子布局 */}
         <Card className="home-top" >
-          <h1 className="pixel-text1">Iamjoney</h1>
+          <h1 className="pixel-text1">
+            Iamjoney
+          </h1>
+          <span className="pixel-text1">React Native /.NetCore /Nodejs /UE /C++ </span>
         </Card>
 
-        <Card className="home-info" noStyle={true} >
+        <Card className="home-info flex" noStyle={true} >
           <div className="home-info-content">
             <Card title="About Me" className="mb-20">
               <div className="flex flex-col md:flex-row gap-8 items-center">
@@ -191,12 +200,19 @@ export default function Home() {
                 </div>
               </div>
             </Card>
-
-
+         
           </div>
+
+          <Card title="Skill Tree" className="home-project-2 ml-20" >
+            <D3Skill ></D3Skill>
+          </Card>
         </Card>
 
-        <Card title="Skill Tree" className="home-project-2" >
+        <Card title="Business Project: App" className="mb-20 home-project">
+          <PhoneFanCardClient />
+        </Card>
+
+        {/* <Card title="Skill Tree" className="home-project-2" >
           <div className="grid grid-cols-3 gap-2 justify-items-start items-start px-2 md:px-3">
             <div className="home-skill-pane1">
               <SkillPane
@@ -218,7 +234,7 @@ export default function Home() {
               />
             </div>
           </div>
-        </Card>
+        </Card> */}
 
         <Card title="Personal Projects" className="mb-20 home-project">
           <div className="grid grid-cols-4 gap-2 justify-items-start items-start px-2 md:px-3">

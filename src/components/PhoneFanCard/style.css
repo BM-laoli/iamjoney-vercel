@@ -1,0 +1,91 @@
+.image-fan-container {
+  position: relative;
+  width: 500px;
+  height: 548px;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   margin: 0 auto; /* 让整个容器居中 */
+   margin-top: -84px;
+   
+}
+
+.cards-stack {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-card {
+  position: absolute;
+  width: 180px;
+  height: 360px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform-origin: center bottom;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+
+   /* 🎯 关键修复：让卡片从容器中心开始定位 */
+  left: 50%;
+  top: 50%;
+  margin-left: -90px; /* 宽度的一半 */
+  margin-top: -140px; /* 高度的一半 */
+  
+  /* 默认就是展开状态 */
+  transform: 
+    translateX(calc((var(--index) - (var(--total) - 1) / 2) * 80px))
+    translateY(calc(abs(var(--index) - (var(--total) - 1) / 2) * 15px))
+    rotateZ(calc((var(--index) - (var(--total) - 1) / 2) * 12deg));
+  
+  z-index: calc(var(--total) - abs(var(--index) - (var(--total) - 1) / 2));
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Hover效果 - 突出显示 */
+.image-card.hovered {
+  transform: 
+    translateX(calc((var(--index) - (var(--total) - 1) / 2) * 80px))
+    translateY(calc(abs(var(--index) - (var(--total) - 1) / 2) * 15px - 30px))
+    rotateZ(calc((var(--index) - (var(--total) - 1) / 2) * 12deg))
+    scale(1.1);
+  z-index: 999;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.image-card.hovered img {
+  transform: scale(1.05);
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .image-fan-container {
+    width: 350px;
+    height: 280px;
+  }
+  
+  .image-card {
+    width: 120px;
+    height: 200px;
+    transform: 
+      translateX(calc((var(--index) - (var(--total) - 1) / 2) * 50px))
+      translateY(calc(abs(var(--index) - (var(--total) - 1) / 2) * 10px))
+      rotateZ(calc((var(--index) - (var(--total) - 1) / 2) * 10deg));
+  }
+  
+  .image-card.hovered {
+    transform: 
+      translateX(calc((var(--index) - (var(--total) - 1) / 2) * 50px))
+      translateY(calc(abs(var(--index) - (var(--total) - 1) / 2) * 10px - 20px))
+      rotateZ(calc((var(--index) - (var(--total) - 1) / 2) * 10deg))
+      scale(1.1);
+  }
+}

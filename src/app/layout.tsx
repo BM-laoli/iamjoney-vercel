@@ -30,6 +30,8 @@ export default function RootLayout({
     <html lang="zh-CN">
       <head>
         <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ''} />
+      {/* 注入D3js */}
+       <script src="https://d3js.org/d3.v7.min.js"></script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
