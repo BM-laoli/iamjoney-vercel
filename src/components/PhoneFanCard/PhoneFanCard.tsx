@@ -41,24 +41,29 @@ const ImageFanCard = ({ cards = [], onCardClick = () => {} }) => {
 const PhoneFanCardClient = () => {
  const projectCards = [
     {
+      // 美团点餐
       img: '/image0.png',
-      link: 'https://project1.com'
+      link: 'https://apps.apple.com/cn/app/%E7%BE%8E%E5%9B%A2%E7%82%B9%E9%A4%90%E5%8A%A9%E6%89%8B%E6%99%BA%E8%83%BD%E7%89%88/id1473911336'
     },
     {
+      // Newegg seller
       img: '/image1.png',
-      link: 'https://project2.com'
+      link: 'https://apps.apple.com/us/app/newegg-sellers/id1586090303'
     },
     {
+      // Newegg
       img: '/image2.png',
-      link: 'https://project3.com'
+      link: 'https://apps.apple.com/us/app/newegg-tech-shopping-online/id345188269'
     },
     {
+      // 牵牛花
       img: '/image3.png',
-      link: 'https://project4.com'
+      link: 'https://apps.apple.com/cn/app/%E7%89%B5%E7%89%9B%E8%8A%B1%E5%95%86%E5%AE%B6%E7%AB%AF/id1498906833'
     },
     {
+      // 易球成名
       img: '/image4.png',
-      link: 'https://project5.com'
+      link: 'https://apps.apple.com/cn/app/%E6%98%93%E7%90%83%E6%88%90%E5%90%8Dclub/id1501809032'
     }
   ] as any[];
 
