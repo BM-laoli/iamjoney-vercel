@@ -18,19 +18,19 @@ export default function ResumePage() {
         {/* Overview */}
         <Card className="mb-8">
           <h1 className="text-2xl md:text-3xl font-bold mb-4 pixel-text">Personal Resume</h1>
-          <p className="pixel-text text-sm md:text-base">26 years old · 5 years experience · Bachelor's degree · Currently employed (not considering offers)</p>
-          <p className="pixel-text text-sm md:text-base mt-2">Recent years: React Native / UE Game Client · NetEase Guangzhou</p>
+          <p className="pixel-text text-sm md:text-base">26 years old · 5 years experience · Bachelor's degree · Currently employed </p>
+          <p className="pixel-text text-sm md:text-base mt-2">Recent years: React Native / .NetCore / UE Game Client  · NetEase Guangzhou</p>
         </Card>
 
         {/* Tech Stack */}
         <Card title="Tech Stack" className="mb-10">
           <p className="pixel-text text-sm md:text-base">
-            React · Node.js · TypeScript · React Native · .NET Core (C#) · iOS (Native) · Full Stack (React + Node.js + .NET Core)
+            React · Node.js · TypeScript · React Native · .NET Core (C#) · iOS (Native) · Full Stack (React + Node.js + .NET Core) · UE(Python+Cpp)
           </p>
           <p className="pixel-text text-sm md:text-base mt-3">
             Invited guest speaker at 2022 Chongqing Frontend Exchange Conference &ldquo;Tongzhou&rdquo;; continuously expanding boundaries from frontend development. Former senior engineer at Newegg, one of North America&apos;s top four e-commerce companies.
           </p>
-          <p className="pixel-text text-sm md:text-base mt-2">Desired position: Game Client/Frontend React · Industry flexible · Salary: Negotiable</p>
+          <p className="pixel-text text-sm md:text-base mt-2">Desired position: Full Stack/Game Client · Industry flexible · Salary: Negotiable</p>
         </Card>
 
         {/* Work Experience */}
@@ -157,11 +157,6 @@ export default function ResumePage() {
           <Card noStyle={true}>
             <h3 className="font-bold pixel-text">2017.09 - 2021.06 · Hunan University of Technology · Bachelor of Engineering · Software Engineering</h3>
             <p className="pixel-text mt-1">GPA: 3.2/4.0 · Core Courses: Data Structures, Algorithms, Database Systems, Software Engineering</p>
-            <ul className="list-disc pl-5 mt-2 space-y-1 text-sm pixel-text">
-              <li>Participated in ACM programming contests, enhanced algorithmic thinking</li>
-              <li>Led multiple team projects, accumulated project management experience</li>
-              <li>Self-taught frontend development, built personal projects</li>
-            </ul>
           </Card>
         </Card>
 

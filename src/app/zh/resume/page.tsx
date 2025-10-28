@@ -21,21 +21,21 @@ export default function ResumePage() {
         <Card title="个人简历" className="mb-10">
           <div className="space-y-4">
             <div>
-              <h2 className="text-2xl font-bold pixel-text mb-2">李思凡 (JoneySli)</h2>
+              <h2 className="text-2xl font-bold pixel-text mb-2">李仕增 (JoneySli)</h2>
               <p className="pixel-text text-lg mb-2">全栈开发工程师 · 5年经验</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm pixel-text">
                 <div>
-                  <p><strong>邮箱:</strong> joney.sli@gmail.com</p>
-                  <p><strong>微信:</strong> JoneySli</p>
+                  <p><strong>邮箱:</strong> bmlishizeng@gmail.com</p>
+                  <p><strong>微信:</strong> +86 18376621755</p>
                 </div>
                 <div>
                   <p><strong>个人网站:</strong> <a href="https://iamjoney.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">iamjoney.com</a></p>
-                  <p><strong>GitHub:</strong> <a href="https://github.com/JoneySli" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">github.com/JoneySli</a></p>
+                  <p><strong>GitHub:</strong> <a href="https://github.com/BM-laoli" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">github.com/JoneySli</a></p>
                 </div>
               </div>
             </div>
           </div>
-          <p className="pixel-text text-sm md:text-base mt-2">期望职位：游戏客户端/前端React · 行业不限 · 薪资：面议</p>
+          <p className="pixel-text text-sm md:text-base mt-2">期望职位：全栈(.net)前端React/游戏客户端 · 行业不限 · 薪资：面议</p>
         </Card>
 
         {/* 技术栈 */}
@@ -47,8 +47,8 @@ export default function ResumePage() {
                 <li>React / React Native / Next.js</li>
                 <li>TypeScript / JavaScript (ES6+)</li>
                 <li>HTML5 / CSS3 / Tailwind CSS</li>
-                <li>Vue.js / Angular (基础)</li>
-                <li>移动端开发 (iOS/Android)</li>
+                <li>Vue.js / Angular </li>
+                <li>iOS/Android</li>
               </ul>
             </Card>
             
@@ -67,7 +67,7 @@ export default function ResumePage() {
               <h3 className="font-bold pixel-text mb-3">游戏开发</h3>
               <ul className="list-disc pl-5 space-y-1 text-sm pixel-text">
                 <li>Unreal Engine (UE4/UE5)</li>
-                <li>Unity 3D</li>
+                <li>Unity</li>
                 <li>C++ / Blueprint</li>
                 <li>游戏客户端开发</li>
                 <li>性能优化</li>
@@ -98,8 +98,8 @@ export default function ResumePage() {
             <h3 className="font-bold pixel-text">2024年9月 - 至今 · 网易广州（法本信息外包） · 游戏客户端开发 · eFootball工作室</h3>
             <p className="pixel-text mt-1">技术关键词：React Native / React / UE / Python / .NET Core / Node</p>
             <ul className="list-disc pl-5 mt-2 space-y-1 text-sm pixel-text">
-              <li>目前主攻：前端 + 游戏客户端 + .NET 全栈</li>
-              <li>成功转型（前端 → 游戏客户端 + 前端）</li>
+              <li>目前主攻：前端ReactNative + 游戏客户端(UE方向) + .NET 全栈</li>
+              <li>成功转型（前端 → 游戏客户端 + 全栈</li>
               <li>成功上线eFootball中国PC版</li>
               <li>从0搭建游戏盒子子模块架构（包含数据同步、CSV同步、热更新方案）</li>
               <li>成功上线eFootball游戏盒子三端（Taro）</li>
@@ -213,13 +213,8 @@ export default function ResumePage() {
         {/* 教育经历 */}
         <Card title="教育经历" className="mb-10">
           <Card noStyle={true}>
-            <h3 className="font-bold pixel-text">2016年9月 - 2020年6月 · 湖南工业大学 · 软件工程 · 本科</h3>
-            <p className="pixel-text mt-1">GPA: 3.2/4.0 · 主修课程：数据结构、算法设计、软件工程、数据库系统</p>
-            <ul className="list-disc pl-5 mt-2 space-y-1 text-sm pixel-text">
-              <li>获得校级优秀学生奖学金</li>
-              <li>参与多个软件开发项目，积累了扎实的编程基础</li>
-              <li>担任班级技术委员，组织技术分享活动</li>
-            </ul>
+            <h3 className="font-bold pixel-text">September 2020 - June 2023 · Nankai University · CS · Undergraduate</h3>
+            <h3 className="font-bold pixel-text">September 2017 - June 2020 · Tianjin Vocational University · Software Technology · Associate's Degree</h3>
           </Card>
         </Card>
 
