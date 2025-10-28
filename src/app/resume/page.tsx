@@ -155,8 +155,8 @@ export default function ResumePage() {
         {/* Education */}
         <Card title="Education" className="mb-10">
           <Card noStyle={true}>
-            <h3 className="font-bold pixel-text">2017.09 - 2021.06 · Hunan University of Technology · Bachelor of Engineering · Software Engineering</h3>
-            <p className="pixel-text mt-1">GPA: 3.2/4.0 · Core Courses: Data Structures, Algorithms, Database Systems, Software Engineering</p>
+            <h3 className="font-bold pixel-text">September 2020 - June 2023 · Nankai University · CS · Undergraduate</h3>
+            <h3 className="font-bold pixel-text">September 2017 - June 2020 · Tianjin Vocational University · Software Technology · Associate's Degree</h3>
           </Card>
         </Card>
 
